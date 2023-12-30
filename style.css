@@ -1,0 +1,261 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color:lightcoral;
+}
+
+
+nav{
+    display: flex;
+    overflow: hidden;
+}
+
+.logo{
+    width: 15%;
+}
+.logo img {
+    width: 100px;
+    border-radius: 50%;
+}
+
+.nav{
+    width: 80%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav a{
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+}
+
+.nav a:hover{
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+}
+
+.active{
+    background-color: brown;
+}
+
+nav .icons{
+    display: none;
+    width: 0;
+}
+
+
+.column{
+    float: left;
+    width: 50%;
+    padding: 10px;
+    height: 420px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+    
+}
+
+.column img{
+    width: 50%;
+    height: 200px;
+    float: right; 
+    border-radius: 50%;
+    
+}
+
+
+.colinside
+{
+    padding: 4%;
+}
+
+.section2{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 5%;
+}
+
+.column2{
+    display: flex;
+    gap: 15px;
+    padding: 15px;
+}
+
+
+
+
+@media (max-width: 600px){
+    .nav a {
+        display: none;
+        
+    }
+    nav a.icons{
+        text-decoration: none;
+        color: white;
+        padding-right: 40px;
+        padding-top: 40px;
+        float: right;
+        display: block; 
+    }
+    .nav.responsive {
+        position: relative;
+        display: block;
+    }
+    
+    .nav.responsive .oo{
+        display: flex;
+        flex-direction: column;
+        width: 20%;
+        margin-top: 15px;
+        margin-left: 20px;
+        
+    }
+    nav{
+        display: block;
+    }
+
+}
+
+    @media screen and (max-width:768px) {
+       
+
+        .column{
+            height: auto;
+            width: 500px;
+            float: none;
+           }
+        
+           .column2{
+            display: block;
+           }
+        
+
+    }
+    .about{
+        background-color:lightsalmon;
+    }
+
+    .wrap{
+        position: relative; 
+        bottom: 5vh;
+        width: 100%;
+        
+    }
+    .container{
+        
+
+        width: 30%;
+        background-color: rgb(112, 206, 72);
+        border-radius: 10px;
+        height: 200px;
+    }
+    .counter{
+        display: flex;
+        padding: 30px;
+        justify-content: space-around;
+
+    }
+    .container .text{
+        
+        display: grid;
+        margin-top: 10vh;
+        text-align: center;
+        font-size: 20px;
+    }
+    
+        
+    
+    .container i{
+        color: azure;
+        display: grid;
+        text-align: center;
+        font-size: 30px;
+        margin-top: 30px;
+    }
+    span.num{
+        color: azure;
+        font-size: 30px;
+        text-align: center;
+        display: grid;
+        position: relative;
+        top: 8vh;
+    }
+
+    @media screen and(max-width :600px) {
+        .wrap{
+            display: block;
+            width: 100%;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+        .container {
+            height: 30vmin;
+            width:100%;
+            font-size: 12px;
+        }
+    }
+    @media screen and(max-width:768px){
+        .wrap{
+            width: 90vw;
+            flex-wrap: wrap;
+            gap: 30px;
+            display: b;
+        }
+        }
+
+        .btn .butn a{
+            text-decoration: none;
+            color: white;
+
+        }
+        .btn .butn{
+            background-color: rgb(24, 67, 117);
+            padding: 10px;
+            border-radius: 10px;
+            border: none;
+            display: block;
+            margin: auto;
+        }
+        
+        .achivement {
+            text-align: center;
+            color: white;
+            margin-top: 10vh;
+
+        }
+
+
+        
+        table,td,th{
+            border: 1px solid black;
+            
+        }
+        td,th{
+            height: 30px;
+        }
+    table{
+        width: 85%;
+    }
+    input,textarea{
+        width: 98%;
+    }
+
+    button:hover{
+        cursor: pointer;
+        color: white;
+        border-radius: 10%;
+    }
+
+    footer{
+        margin-top: 10px;
+    }
+  
